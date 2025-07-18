@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Audio Capture Extension",
+  "version": "1.0",
+  "permissions": [
+    "tabCapture",
+    "tabs",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "ws://localhost:8766/"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
